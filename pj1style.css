@@ -1,0 +1,143 @@
+/* body background settings */
+body {
+    background-color: rgb(232, 232, 232);
+    font-size: 20px;
+    margin-left: 10px;
+    padding: 30px;
+    background-image: url('/images/beach.jpeg')
+}
+
+/* default setting for table alements */
+th {
+    text-align: center;
+}
+
+/* setting for main title */
+.maintitle {
+    text-align: center;
+    color: black;
+    font: bold 25px Arial;
+
+    background-color: rgb(255, 255, 255);
+    padding: 15px 258px 15px 258px;
+    border-top: 5px solid #1c6dcf;
+    border-radius: 5px;
+    width: 80%;
+}
+
+/* first row settings */
+.titlefirst {
+    text-align: center;
+    font-style: italic;
+    color: black;
+    font: bold 25px Arial;
+
+    background-color: rgb(255, 255, 255);
+    /* bottom left top right */
+    padding: 15px 300px 15px 10px;
+    padding-right: 100px;
+    border-top: 5px solid #1c6dcf;
+    /* border-bottom: 1px solid #1c6dcf; */
+    border-radius: 5px;
+}
+
+#Projecttitle {
+    width: 10%;
+}
+
+.tabletitle {
+    text-align: center;
+    color: white;
+    background-color: white;
+    font: normal 20px Arial;
+    text-decoration: none;
+    /* bottom left top right */
+    padding: 10px 100px 10px 100px;
+    border-bottom: 1px solid #1c6dcf;
+    border-left: 20px solid gray;
+    border-right: 20px solid gray;
+    border-bottom: 20px solid white;
+    border-top: 20px solid white;
+    border-radius: 10px;
+}
+
+.tabletitle:hover {
+    background-color: #1c6dcf;
+    /* bottom left top right */
+    padding: 10px 0px 10px 0px;
+    border-radius: 50px;
+}
+
+
+/* homework status settings */
+.status {
+    text-align: center;
+    font-style: italic;
+    color: white;
+    background-color: gray;
+    font: normal 20px Arial;
+    text-decoration: none;
+
+    /* bottom left top right */
+    padding: 2px 2px 2px 20px;
+    border-top: 20px solid #1c6dcf;
+    border-bottom: 10px solid #1c6dcf;
+    border-right: 20px solid rgb(255, 255, 255);
+    /* border-left: 10px solid white; */
+    border-radius: 5px;
+    padding-top: 10px;
+
+}
+
+.duedate {
+    text-align: center;
+    font-style: italic;
+    color: white;
+    background-color: gray;
+    font: normal 20px Arial;
+    text-decoration: none;
+
+    /* bottom left top right */
+    padding: 2px 2px 2px 20px;
+    border-top: 20px solid #1c6dcf;
+    border-bottom: 10px solid #1c6dcf;
+    border-right: 20px solid rgb(200, 200, 200);
+    /* border-left: 10px solid white; */
+    border-radius: 5px;
+    padding-top: 10px;
+
+}
+
+/* table setting */
+table {
+    /* background-color: darkgray; */
+    object-fit: cover;
+    border-radius: 15px;
+    text-align: center;
+    /* cover -- expands image to entire box */
+}
+
+
+/* unvisited link */
+a:link {
+    color: blue;
+}
+
+/* visited link */
+a:visited {
+    color: purple;
+}
+
+/* mouse over link */
+a:hover {
+    color: white;
+    /* background-color: lightgray; */
+    /* bottom left top right */
+    /* padding: 10px 0px 10px 0px; */
+    /* border-radius: 50px; */
+}
+
+/* selected link */
+a:active {
+    color: blue;
+}

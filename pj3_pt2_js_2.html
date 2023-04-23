@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Project 3 Part 2">
+  <link href="pj3_pt2.css" rel="stylesheet" />
+  <link href="standard.css" rel="stylesheet" />
+  <title>Project 3 Part 2</title>
+  <script src="pj3_pt2_js_2.js" async></script>
+
+  <style>
+    body {
+      font-size: 20px;
+      margin-left: 10px;
+      padding: 30px;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <a href="pj1.html">Return to Project 1 </a><br>
+  <a href="pj3.html">Back to Project 3 </a><br><br>
+
+  <h2>Project 3 Part 2</h2>
+
+  <form id="sellerForm" name="myform">
+    <label>Seller's Name:</label>
+    <input class="sellerName" id="sellerNameID" type="text" name="num1" size="25" style="text-align: right">
+  </form>
+
+  <form id="myform1" name="myform">
+
+    <label>For each item type the quanitty sold by the seller:</label>
+    <br>
+    <label>Item 1:</label>
+    <input class="itemNums" type="number" id="itemQtySold1"><br>
+    <label>Item 2:</label>
+    <input class="itemNums" type="number" id="itemQtySold2"><br>
+    <label>Item 3:</label>
+    <input class="itemNums" type="number" id="itemQtySold3"><br>
+    <label>Item 4:</label>
+    <input class="itemNums" type="number" id="itemQtySold4">
+    <br>
+    <input type="button" id="process" value="Submit">
+    <br>
+    <input id="reset" type="reset" value="Clear Form">
+  </form>
+
+  <form id="myform" name="myform">
+    <table>
+      <tr>
+        <th class="title">Item</th>
+        <th class="title">Value</th>
+        <th class="title">Qty Sold</th>
+        <th class="title">Total</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td id="price1">20.99</td>
+        <td><input type="number" id="qtsold1"></td>
+        <td><input type="number" id="total1"></td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td id="price2">12.75</td>
+        <td><input type="number" id="qtsold2"></td>
+        <td><input type="number" id="total2"></td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td id="price3">9.95</td>
+        <td><input type="number" id="qtsold3"></td>
+        <td><input type="number" id="total3"></td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td id="price4">35.89</td>
+        <td><input type="number" id="qtsold4"></td>
+        <td><input type="number" id="total4"></td>
+      </tr>
+      <tr>
+        <th style="text-align: left;" colspan="3">Total Amount Sold</th>
+        <td><input type="text" readonly name="totalAmtSold" size="20" style="text-align: right;"></td>
+      </tr>
+      <tr>
+        <th style="text-align: left;" colspan="3">Total Weekly Earnings</th>
+        <td><input type="text" readonly name="totalWeeklyEarning" size="20" style="text-align: right;"></td>
+      </tr>
+    </table>
+  </form>
+  <br>
+  <!-- <form id="myform3" name="myform">
+    <table>
+      <th style="text-align: left;" colspan="2">Total Amount Sold</th>
+      <td><input type="text" readonly name="commission" size="25" style="text-align: right;"></td>
+      </tr>
+      <tr>
+        <th style="text-align: left;" colspan="2">Total Weekly Earnings</th>
+        <td><input type="text" readonly name="total" size="25" style="text-align: right;"></td>
+      </tr>
+    </table>
+  </form> -->
+  <div id="alert"></div>
+
+</body>
+
+</html>

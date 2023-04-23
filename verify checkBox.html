@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <h2> Displays true if a checkbox is clicked</h2>
+  
+  <p> Select the browsers you have: </p>
+  <input class = "checkbox" type="checkbox" name="browsers" id="Firefox" value="low">Firefox<br> 
+  <input class = "checkbox" type="checkbox" name="browsers" id="Edge" value="Edge">Edge<br> 
+  <input class = "checkbox" type="checkbox" name="browsers" id="Chrome" value="Chrome">Chrome<br>
+  <input class = "checkbox" type="checkbox" name="browsers" id="Safari" value="Safari">Safari<br>
+
+  <input type="button" id="submit" value="SUBMIT">
+
+  <var id="alert3"></var>
+
+</body>
+
+<script>
+  // executes the evaluate function on click
+document.getElementById("submit").onclick = function () {
+    checkCheckbox();
+}
+
+function checkCheckbox() {
+    var text = "";
+    var getSelectedValue = document.querySelector( 'input[name="browsers"]:checked');
+
+    if(getSelectedValue != null) {
+      text += "true "
+      document.getElementById("alert3").textContent = text + getSelectedValue.value;
+    } else {  
+      document.getElementById("alert3").textContent = "No boxes have been checked";
+  };
+}
+
+</script>
+</html>

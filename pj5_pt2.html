@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Project 3 Part 1">
+  <link href="standard.css" rel="stylesheet" />
+  <title>Project 4 Part 2</title>
+  <script src="pj5_pt2.js" async></script>
+
+  <style>
+    
+  </style>
+</head>
+
+<body>
+  <a href="pj1.html">Return to Project 1 </a><br>
+  <a href="pj5.html">Back to Project 5 </a><br><br>
+
+  <h2>Project 5 Part 2</h2>
+  <h2>URL Destination</h2>
+
+<form>
+    <h3>Choose your destination (using onChange event handler)</h3>
+    <select id="destList1"  name="destList1" onchange="goToNewPage(this.form);">
+      <option>Choose Destination:</option>
+        <option value="http://www.yahoo.com/">Yahoo</option>
+        <option value="http://www.w3.org/">W3C</option>
+        <option value="http://www.mozilla.org/">Mozilla</option>
+        <option value="http://www.ccsf.edu/cnit">CNIT</option>
+    </select>
+    </form>
+
+    <br><br>
+
+    <form>
+        <h3>Choose your destination (using onClick event handler)</h3>
+        <select id="destList2">
+            <option>Choose Destination:</option>
+            <option value="http://www.yahoo.com/">Yahoo</option>
+            <option value="http://www.w3.org/">W3C</option>
+            <option value="http://www.mozilla.org/">Mozilla</option>
+            <option value="http://www.ccsf.edu/cnit">CNIT</option>
+        </select>
+    <input type="button" id="Go" value="Go">
+
+    </form>
+
+</body>
+
+</html>

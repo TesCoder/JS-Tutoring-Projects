@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Project 3 Part 1">
+  <link href="standard.css" rel="stylesheet" />
+  <title>Project 3 Part 1</title>
+  <script src="pj3_pt1.js" async></script>
+
+  <style>
+    body {
+      font-size: 20px;
+      margin-left: 10px;
+      padding: 30px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <a href="pj1.html" 100>Return to Project 1 </a><br>
+  <a href="pj3.html">Back to Project 3 </a><br><br>
+
+  <h2>Project 3 Part 1</h2>
+
+  <h1>Student Grades</h1>
+
+  <form name="myform">
+    <table>
+      <tr>
+        <td><label for="num1">Project Average</label>:</td>
+        <td><input type="text" name="num1" id="num1" size="10" style="text-align: right;"></td>
+      </tr>
+      <tr>
+        <td><label for="num2">Mid-Term Exam Score</label>:</td>
+        <td><input type=" text" name="num2" id="num2" size="10" style="text-align: right;"></td>
+      </tr>
+      <tr>
+        <td><label for="num3">Final Exam Score</label>:</td>
+        <td><input type=" text" name="num3" id="num3" size="10" style="text-align: right;"></td>
+      </tr>
+      <tr>
+        <td><label for="num4">Participation</label>:</td>
+        <td><input type=" text" name="num4" id="num4" size="10" style="text-align: right;"></td>
+      </tr>
+    </table>
+    <br>
+    <input type="button" id="process" value="SUBMIT">
+    <input id="reset" type="reset" value="RESET">
+  </form>
+  <br>
+
+  <div id="alert"></div>
+  <div id="result"></div>
+
+</body>
+
+</html>

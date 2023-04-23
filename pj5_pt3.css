@@ -1,0 +1,31 @@
+body {
+    background-image: url('/images/beach.jpeg');
+    border: 4px solid white;
+}
+
+table, th, td {
+    border: 1px dotted;
+}
+
+table {
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+
+.firstRow {
+    background-color: brown;
+    color: white;
+    /* padding: top right down left */
+    padding: 5px 10px 5px 2px;
+}
+
+.oddRow {
+    background-color: orange;
+    padding: 5px;
+}
+
+.evenRow {
+    background-color: yellow;
+    padding: 5px;
+}

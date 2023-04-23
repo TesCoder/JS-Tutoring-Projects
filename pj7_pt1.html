@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Project 3 Part 1">
+
+  <title>Project 7 Part 1</title>
+  <script src="pj7_pt1.js" async></script>
+
+  <link href="standard.css" rel="stylesheet" />
+  <style> 
+    #alert {
+      color: red;  
+    }
+
+    input:required, input[required] {
+      border: 1px solid red;
+    }
+
+  </style>
+  
+
+</head>
+
+<body>
+  <a href="pj1.html">Return to Project 1 </a><br>
+  <a href="pj7.html">Back to Project 7 </a><br><br>
+
+
+  <h2>Project 7 Part 1: Cookie Tester</h2>
+  
+  <section class="body">
+
+
+    <form id="myform" name="myform">
+
+      <p><label for="username">User Name:</label>
+      <input type="text" id="username" name="username" title="Please type your username carefully" size="20" maxlength="20" required></p>
+
+      <p><label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" title="Please type your name carefully" size="20" maxlength="20" required></p>
+
+      <input type="button" id="submit" value="submit">
+      <input type="reset" value="Reset"><br>
+
+    </form>
+    
+    <p id="msg"></p>
+     <div id="alert"></div>
+
+  </section>
+  
+</body>
+
+</html>

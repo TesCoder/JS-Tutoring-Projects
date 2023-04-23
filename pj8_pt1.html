@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<link href="standard.css" rel="stylesheet" />
+<style>
+table,th,td {
+  border : 1px solid black;
+  border-collapse: collapse;
+}
+th,td {
+  padding: 5px;
+}
+
+
+  </style>
+</style>
+<body>
+  <a href="pj1.html">Back to Project 1 </a><br><br>
+  <a href="pj8.html">Back to Project 8 </a><br><br>
+
+  <h2>Project 8 Part 1- AJAX Application</h2>
+
+  
+  <h2> Explanation</h2>
+  <p>This HTML page opens list of CDs using AJAX. It 
+    uses a GET request to get contents of the xml file and displays them as table.</p>
+
+
+
+<button type="button" onclick="loadDoc()">Get CD collection</button>
+<br><br>
+<table id="demo"></table>
+
+<h2> REST API</h2>
+<p> The Food API gives you information about ingredients, recipes, nutrition, and allergins.
+There are 2,600 ingredients, 5,000 recipes, 600k+ products, and 111K+ menu options.</p>
+
+<p> The response file is JSON. There is a number of API endpoints that you can use to query for
+  differen tpieces of information. It uses mostly GET requests (you're mostly getting information not sending.)
+  It  uses parametrs to specify your query.  An API key is required. It can be specified in both the URL and 
+  as a header in the GET request. The API key is used to limit the number of requests someone can make. 
+  It's a usage based pricing model, depening on the get requests. There is a free tier where you can make one 
+  request per second. The price varies as the request rate increases and points. One query can take more than one point 
+depedning on the information returned.</p>
+
+  <a href="https://spoonacular.com/food-api/docs">API Documentation </a><br><br>
+
+  <a href="pj8_pt2.html">Extra Example: Food Search with API</a><br><br>
+
+
+<script>
+  
+function loadDoc() {
+  const xhttp = new XMLHttpRequest();
+  xhttp.onload = function() {
+    myFunction(this);
+  }
+  xhttp.open("GET", "cd_catalog.xml");
+  xhttp.send();
+}
+function myFunction(xml) {
+  const xmlDoc = xml.responseXML;
+  const x = xmlDoc.getElementsByTagName("CD");
+  let table="<tr><th>Artist</th><th>Title</th></tr>";
+  for (let i = 0; i <x.length; i++) { 
+    table += "<tr><td>" +
+    x[i].getElementsByTagName("ARTIST")[0].childNodes[0].nodeValue +
+    "</td><td>" +
+    x[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue +
+    "</td></tr>";
+  }
+  document.getElementById("demo").innerHTML = table;
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <form>
+    <select id="selector">
+      <option value="0">Select an option</option>
+      <option value="1">test1</option>
+      <option value="2" >test2</option>
+      <option value="3">test3</option>
+    </select>
+  </form>
+
+  <br>
+  <input type="button" id="submit" value="SUBMIT">
+
+  <var id="alert3"></var>
+  
+</body>
+<script>
+    // executes the evaluate function on click
+    document.getElementById("submit").onclick = function () {
+      dropDownVerify();
+    }
+    
+    function dropDownVerify() {
+      var selectedVal = document.getElementById("selector");
+      var selectedValIndex = selectedVal.selectedIndex; // index
+      var value = selectedVal.value; // value defined
+      var text = selectedVal.options[selectedVal.selectedIndex].text; // text
+
+      // displays when unizue value is selected
+      if (selectedValIndex != 0) {
+        document.getElementById("alert3").textContent = selectedValIndex + " " + value + " " + text;
+
+      }
+    }
+
+</script>
+
+</html>

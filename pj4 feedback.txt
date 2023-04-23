@@ -1,0 +1,3 @@
+Homework 4 Part 2
+
+Part 2 - the code is not efficient - no problem if you had created one function to create the table and then you would call that SINGLE function 3 times passing parameters but creating 3 functions that basically are doing the same thing is not efficient! You would either create a nested loop or create one function that you would call 3 times passing each time a different interest rate! (-0.5)

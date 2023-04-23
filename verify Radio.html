@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <h2> Displays selected radio option and value</h2>
+  
+  <p> Select the browsers you have: </p>
+  <input type="radio" name="ageGroup" id="low" value="low">less than 21<br> 
+  <input type="radio" name="ageGroup" id="mid" value="mid">between 21 and 50<br> 
+  <input type="radio" name="ageGroup" id="high" value="high">older than 50<br>
+
+  <input type="button" id="submit" value="SUBMIT">
+
+  <var id="alert3"></var>
+
+</body>
+
+<script>
+  // executes the evaluate function on click
+  document.getElementById("submit").onclick = function () {
+      radioVerify();
+  }
+
+  function radioVerify() {
+    var text = "";
+    var getSelectedValue = document.querySelector( 'input[name="ageGroup"]:checked');
+
+    if(getSelectedValue != null) {
+      text += "true "
+      document.getElementById("alert3").textContent = text + getSelectedValue.value;
+    } else {  
+      document.getElementById("alert3").textContent = "No boxes have been checked";
+    };
+  }
+
+</script>
+</html>

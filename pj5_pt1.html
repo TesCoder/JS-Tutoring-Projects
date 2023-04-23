@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Project 3 Part 1">
+  <link href="standard.css" rel="stylesheet" />
+  <title>Project 5 Part 1</title>
+  <script src="pj5_pt1.js" async></script>
+
+  <style>
+    body {
+      font-size: 20px;
+      margin-left: 10px;
+      padding: 30px;
+    }
+
+    .alert {
+      color: red
+    }
+
+  </style>
+
+</head>
+
+<body>
+  <a href="pj1.html">Return to Project 1 </a><br>
+  <a href="pj5.html">Back to Project 5 </a><br><br>
+
+  <h2>Project 5 Part 1</h2>
+  <h2>Survey</h2>
+  
+  <form id="mainForm" name="myform">
+    <label for="quanity">Enter Full Name</label>
+    <input type="text" id="userName" name="quanity" size="25" style="text-align: right;"></input>
+
+    <p> Choose your age group: <br>
+    <input type="radio" name="ageGroup" id="low" value="low">less than 21<br> 
+    <input type="radio" name="ageGroup" id="mid" value="mid">between 21 and 50<br> 
+    <input type="radio" name="ageGroup" id="high" value="high">older than 50<br>
+    </p>
+
+    <p> Select the browsers you have: <br>
+    <input type="checkbox" name="browsers" id="Firefox" value="Firefox">Firefox<br> 
+    <input type="checkbox" name="browsers" id="Edge" value="Edge">Edge<br> 
+    <input type="checkbox" name="browsers" id="Chrome" value="Chrome">Chrome<br>
+    <input type="checkbox" name="browsers" id="Safari" value="Safari">Safari<br>
+    </p>
+
+    <p> Select type of movie you prefer: <br>
+    <select id="movieType">
+      <option value="0">Select an option</option>
+      <option value="Action" >Action</option>
+      <option value="Comedy" >Comedy</option>
+      <option value="Drama" >Drama</option>
+      <option value="Documentary" >Documentary</option>
+      <option value="Science Fiction" >Science Fiction</option>
+    </select>
+    </p>
+
+    <input type="button" id="submit" value="SUBMIT">
+    <input id="reset" type="reset" value="RESET">
+
+  </form>
+
+  <div class ="alert" id="alert"></div>
+  <div class ="alert" id="ageAlert"></div>
+  <div class ="alert" id="browserAlert"></div>
+  <div class ="alert" id="movieAlert"></div>
+  <div id="confirmation"></div>
+
+</body>
+
+
+</html>

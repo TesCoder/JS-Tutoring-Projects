@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="standard.css" rel="stylesheet" />
+    <!-- <script async src="fectch.js"></script> -->
+
+    <style>
+      #getFood {
+        border: 1px red solid;
+      }
+    
+    </style>
+
+
+</head>
+<body>
+
+  <a href="pj1.html">Back to Project 1 </a><br><br>
+  <a href="pj8.html">Back to Project 8 </a><br><br>
+
+  <h2>Project 8 Part 2- Extra Example</h2>
+
+
+    <main>
+        <h2>Food Search with API</h2>
+
+        <form id="myform" name="myform">
+          <p><label for="getFood">Food:</label>
+            <input type="text" id="getFood" name="getFood" placeholder="Try 'pasta' or 'potatoes'" size="20" maxlength="20" required></p>
+    
+          <input type="button" id="submit" value="submit">
+        </form>
+
+        <img height="300" id="myImage"><br>
+        <h3 id="title"></h3>
+
+      </main>
+
+      <script>
+          document.getElementById("submit").onclick = function () {
+
+            if (getFood.value == null || getFood.value == "") {
+              return
+            }
+            
+            fetch('https://api.spoonacular.com/recipes/complexSearch?query='+getFood.value+'&maxFat=25&number=2&apiKey=74a886ab810b4f90b2a558393bdbee66')
+              .then((response) => {
+                return response.json();
+              })
+              .then((myContent) => {
+                var result = myContent.results[0]
+                myImage.src = result.image;
+                title.textContent = result.title;
+
+                console.log(results)
+              });
+          };
+
+
+          </script>
+    
+</body>
+</html>
